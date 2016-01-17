@@ -1,0 +1,72 @@
+﻿* {
+	 	 font-family: "HelveticaNeue-Light", "Helvetica Neue Light","Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+	 	
+
+ .break {
+ clear:both;
+ }
+
+ .codecontainer {
+ width:50%;
+ float:left;		
+ position:relative;
+ }
+ 
+ .codecontainer textarea{
+     width: 100%;
+     height: 100%;
+ }
+
+ .code {
+ border-left: 1px solid grey;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+ padding:10px;
+ font-size: 1.3em;
+ font-family: "Monaco", "Courier New", "Courier", monospace;
+ }
+
+ #cssContainer, #jsContainer {
+ display:none;
+ }
+
+ .white {
+  color: #fff;
+}
+
+ .containerTitle {
+ position:absolute;
+ right:20px;
+ top:10px;
+ background-color:#FFF;
+ padding:4px;
+ border:1px solid grey;
+ border-radius:4px;
+ }
+ .selector:focus,
+ .selector:active {
+    color: #999;
+}
+
+ .active:hover {
+     color : black;  
+}
+
+ #resultFrame {
+ width:100%;
+ height:100%;
+ border:0;
+ border-left:1px solid grey;
+ }
+
+ .resultContainer {
+ height:100%;	
+ }
+
+ textarea {
+ border:none;
+ resize: none;
+ font-size:100%;
+ }

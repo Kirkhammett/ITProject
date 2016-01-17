@@ -1,0 +1,96 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<link rel="stylesheet" type="text/css" href="~/Content/myStyle.css">
+
+<body>
+    <script>
+
+
+ $(function() {
+
+	 var height=$( window ).height()-40;
+
+	 $(".codecontainer").css("height", height + "px");
+	 $(".selector").hover(function (event) {
+	     return false;
+	 });
+	 $(".selector").click(function(event) {
+	
+	     var $this = $(this);
+	     if (!$this.hasClass('active')) {
+	         $this.addClass('active');
+	     }
+	     else { $this.removeClass('active'); }
+		 var id=$(this).attr("name");
+
+		 $("#"+id+"Container").toggle();
+
+		 var number = $('.codecontainer').filter(function() {
+		 	return $(this).css('display') !== 'none';
+		 }).length;
+	 	 var width=100/number;
+
+	 	 $(".codecontainer").css("width",width+"%");
+
+	 });
+
+
+	 $("#run").click(function() {
+
+ 	 	 $('#resultFrame').contents().find('html').html("<style>" + $('#css').val()+"</style>"+$("#html").val());
+
+	 	document.getElementById('resultFrame').contentWindow.eval( $('#js').val() );
+	 });
+
+ });
+    </script>
+    <div class="container-fluid" id="container">
+        <nav class="navbar navbar-fixed-top navbar-inverse">
+            <span class="navbar-text glyphicon glyphicon-th white pull-left"></span>
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <span class="navbar-brand">CodePlayer</span>
+                </div>
+
+                    <ul class="nav navbar-nav">
+                        <li class="selector active" name="html"><a href="#">HTML</a></li>
+                        <li class="selector" name="css"><a href="#">CSS</a></li>
+                        <li class="selector" name="js"><a href="#">JS</a></li>
+                        <li class="selector active" name="result"><a href="#">Result</a></li>
+                    </ul>
+                <ul class="nav navbar-nav pull-right">
+                    <li style="padding-right: 5px;"><button class="btn navbar-btn btn-info" id="save"><span class="glyphicon glyphicon-floppy-disk"></span></button></li>
+                    <li style="padding-right: 5px;"><button class="btn navbar-btn btn-success" id="run"><span class="glyphicon glyphicon-play"></span> Run</button></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="break"></div>
+        <div class="row">
+            <div class="codecontainer" id="htmlContainer">
+                <span class="containerTitle">HTML</span>
+                <textarea class="code" id="html"></textarea>
+            </div>
+
+            <div class="codecontainer" id="cssContainer">
+                <span class="containerTitle">CSS</span>
+                <textarea class="code" id="css"></textarea>
+            </div>
+
+            <div class="codecontainer" id="jsContainer">
+                <span class="containerTitle">JS</span>
+                <textarea class="code" id="js"></textarea>
+            </div>
+            <div class="codecontainer" id="resultContainer">
+                <span class="containerTitle">Result</span>
+                <div class="resultContainer">
+                    <iframe id="resultFrame"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
