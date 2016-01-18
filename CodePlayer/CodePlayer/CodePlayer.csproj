@@ -141,6 +141,7 @@
     <Content Include="videos\1.webm" />
     <Content Include="Views\User\LogIn.cshtml" />
     <Content Include="Scripts\jquery-2.2.0.min.map" />
+    <Content Include="Views\Shared\_UserLayout.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
