@@ -168,6 +168,6 @@ C:\GitHub Projects\ITProject\CodePlayer\CodePlayer\bin\System.Web.Webpages.Deplo
 C:\GitHub Projects\ITProject\CodePlayer\CodePlayer\bin\System.Web.Webpages.Razor.xml
 C:\GitHub Projects\ITProject\CodePlayer\CodePlayer\bin\System.Web.Helpers.xml
 C:\GitHub Projects\ITProject\CodePlayer\CodePlayer\bin\System.Web.Mvc.xml
-C:\GitHub Projects\ITProject\CodePlayer\CodePlayer\obj\Debug\CodePlayer.csprojResolveAssemblyReference.cache
 C:\GitHub Projects\ITProject\CodePlayer\CodePlayer\obj\Debug\CodePlayer.dll
 C:\GitHub Projects\ITProject\CodePlayer\CodePlayer\obj\Debug\CodePlayer.pdb
+C:\GitHub Projects\ITProject\CodePlayer\CodePlayer\obj\Debug\CodePlayer.csprojResolveAssemblyReference.cache

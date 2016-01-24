@@ -7,8 +7,6 @@
 
 <body>
     <script>
-
-
  $(function() {
 
 	 var height=$( window ).height()-40;
@@ -34,7 +32,6 @@
 	 	 var width=100/number;
 
 	 	 $(".codecontainer").css("width",width+"%");
-
 	 });
 
 
@@ -44,7 +41,6 @@
 
 	 	document.getElementById('resultFrame').contentWindow.eval( $('#js').val() );
 	 });
-
  });
     </script>
         <div class="break"></div>
@@ -53,12 +49,10 @@
                 <span class="containerTitle">HTML</span>
                 <textarea class="code" id="html"></textarea>
             </div>
-
             <div class="codecontainer" id="cssContainer">
                 <span class="containerTitle">CSS</span>
                 <textarea class="code" id="css"></textarea>
             </div>
-
             <div class="codecontainer" id="jsContainer">
                 <span class="containerTitle">JS</span>
                 <textarea class="code" id="js"></textarea>
