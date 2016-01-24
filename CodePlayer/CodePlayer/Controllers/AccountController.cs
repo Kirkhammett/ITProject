@@ -63,7 +63,7 @@ namespace CodePlayer.Controllers
 
         public void Register(Models.User registrant)
         {
-            if(!ModelState.IsValid)
+            if(ModelState.IsValid)
             {
                 using (var db = new Models.UserModel())
                 {
